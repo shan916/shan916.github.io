@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zeeshan Khaliq's Portfolio</title> 
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+  <script type="text/javascript" src="js/featured-work.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+  <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Zeeshan's Portfolio</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="resume/Resume.pdf">Resume</a></li>
+    </ul>
+  </div>
+</nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img class="title-logo" src="images/app_icon.png" alt="logo">
+      </div>
+      <div class="col-md-6 text-right text-uppercase title">
+        <h1 class="title-super text-thin">Zeeshan Khaliq</h1>
+        <h4>Software Engineer</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <hr class="hr-normal">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-muted text-bold text-center">Featured Work</h2>
+      </div>
+    </div>
+    <div ng-app="featured-work">
+    <div class="row text-center" ng-controller="FeaturedWorkController as work">
+      <div class="col-md-12" ng-repeat="project in work.projects">
+        <img src="{{project.imageUrl}}" alt="{{project.name}}" class="img-responsive center-block">
+        <h3 class="text-uppercase text-bold app-title">{{project.name}}</h3>
+        <a href="{{project.storeUrl}}" target="_blank">
+          <img src="images/app_store_badge.svg" alt="Download on the App Store" class="app-store-badge">
+        </a>
+      </div>
+    </div>
+    </div>
+  </div>
