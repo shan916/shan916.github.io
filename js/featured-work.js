@@ -10,7 +10,7 @@
 			name: 'Cashculator',
 			imageUrl: 'images/cashculator.png',
 			storeUrl: 'https://itunes.apple.com/us/app/cashculator-cash-counter/id574166464?mt=8',
-			appDescription: 'Having a hard time counting your cash? This is a must have app if you are a cashier or need an easier and accurate calculator for counting your cash!. Counts bills, coins, coin rolls and checks! Just enter the amount for each denomination and the app does the calculations.'
+			appDescription: 'Need help counting your cash? This is a must have app if you are a cashier or need an easier and accurate calculator for counting your cash! Counts bills, coins, coin rolls and checks! Just enter the amount for each denomination and the app does the calculations. Notification Center Widget makes it easy to quickly view totals.'
 		}
 	];
 })();
